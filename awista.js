@@ -32,18 +32,17 @@ function createRow(title, text) {
 function createWidget(pretitle, title, subtitle, color) {
     let w = new ListWidget()
     w.backgroundColor = new Color(color)
-    let preTxt = w.addText(pretitle.toUpperCase())
+    let preTxt = w.addText("🗑️ ")
     preTxt.textColor = Color.white()
-    preTxt.font = Font.systemFont(30)
+    preTxt.font = Font.systemFont(28)
     w.addSpacer(5)
-    let titleTxt = w.addText(title.toUpperCase())
+    let preTxt2 = w.addText(pretitle.toUpperCase())
+    preTxt2.textColor = Color.white()
+    preTxt2.font = Font.systemFont(28)
+    let titleTxt = w.addText(title.toUpperCase() + " " + subtitle)
     titleTxt.textColor = Color.white()
-    titleTxt.textOpacity = 0.8
+    titleTxt.textOpacity = 0.6
     titleTxt.font = Font.systemFont(22)
     w.addSpacer(5)
-    let subTxt = w.addText(subtitle)
-    subTxt.textColor = Color.white()
-    subTxt.textOpacity = 0.8
-    subTxt.font = Font.systemFont(22)
     return w
 }
