@@ -30,7 +30,7 @@ function createRow(title, text) {
 
 function createWidget(kreis, sevenVal) {
     let w = new ListWidget()
-    w.backgroundColor = Color.blue()
+    w.backgroundColor = new Color("#1f76b0")
     let preTxt = w.addText("🦠" + Math.round(sevenVal).toString())
     preTxt.textColor = Color.white()
     preTxt.font = Font.systemFont(40)
