@@ -33,7 +33,7 @@ function createWidget(kreis, sevenVal) {
     w.backgroundColor = new Color("#1f76b0")
     let preTxt = w.addText("🦠" + Math.round(sevenVal).toString())
     preTxt.textColor = Color.white()
-    preTxt.font = Font.systemFont(40)
+    preTxt.font = Font.systemFont(30)
     w.addSpacer(5)
 
     let titleTxt = w.addText(kreis)
